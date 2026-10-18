@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE IUT Aix-en-Provence - SCRUM</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #0f172a;
+            --accent: #f59e0b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-light: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--card-bg);
+            max-width: 700px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1e293b 100%);
+            color: #ffffff;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .badge-iut {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            color: #38bdf8;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 6px 16px;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .scrum-card {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 5px solid var(--primary);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .scrum-title {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .scrum-title span {
+            background: var(--primary);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .scrum-desc {
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #f1f5f9;
+            color: var(--text-light);
+            font-size: 0.875rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            .content {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="badge-iut">IUT Aix-en-Provence</div>
+        <h1>SAE 2026</h1>
+        <p>Développement d'Application Web MVC</p>
+    </div>
+
+    <div class="content">
+        <div class="scrum-card">
+            <div class="scrum-title">
+                ⚡ Framework SCRUM
+                <span>Agile</span>
+            </div>
+            <p class="scrum-desc">
+                Projet géré avec la méthode agile SCRUM. Organisation par Sprints, gestion du Backlog Produit et intégration continue (CI/CD) déployée avec succès.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Projet SAÉ BUT Informatique • Universite d'Aix-Marseille
+    </div>
+</div>
+
+</body>
+</html>
